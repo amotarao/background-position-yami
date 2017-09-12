@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>background-position の闇</title>
+<style>
+body {
+  background: #fafafa;
+}
+.wakuA {
+  background-color: #F1F8E9;
+  border: 3px solid #AED581;
+  height: 50px;
+  width: 300px;
+}
+.wakuB {
+  background-color: #fff;
+  border: 3px solid #ccc;
+  height: 50px;
+  width: 300px;
+}
+.maruA {
+  background-image: radial-gradient(ellipse at center, #2196F3 0%,#2196F3 70.71%, transparent 70.71%, transparent 100%);
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+}
+.maruB {
+  background-image: radial-gradient(ellipse at center, #FF9800 0%,#FF9800 70.71%, transparent 70.71%, transparent 100%);
+  background-repeat: no-repeat;
+  background-size: 400px 50px;
+}
+.maruC {
+  background-image: radial-gradient(ellipse at center, #f44336 0%,#f44336 70.71%, transparent 70.71%, transparent 100%);
+  background-repeat: no-repeat;
+  background-size: 600px 50px;
+}
+.maruD {
+  background-image: radial-gradient(ellipse at center, #607D8B 0%,#607D8B 70.71%, transparent 70.71%, transparent 100%);
+  background-repeat: no-repeat;
+  background-size: 300px 50px;
+}
+</style>
+</head>
+<body>
+
+<h1>background-position の闇</h1>
+
+<h2>用意するもの</h2>
+<ul>
+  <li>
+    緑の枠 300x50
+    <div class="wakuA"></div>
+  </li>
+  <li>
+    青の丸（background-image） 50x50
+    <div class="wakuB maruA"></div>
+  </li>
+  <li>
+    橙の丸（background-image） 400x50
+    <div class="wakuB maruB"></div>
+  </li>
+  <li>
+    赤の丸（background-image） 600x50
+    <div class="wakuB maruC"></div>
+  </li>
+  <li>
+    グレーの丸（background-image） 300x50
+    <div class="wakuB maruD"></div>
+  </li>
+</ul>
+
+<h2>background-positionを変えてみる</h2>
+<ul>
+  <li>
+    background-position: 0% 0%;
+    <div class="wakuA maruA" style="background-position: 0% 0%;"></div>
+    <div class="wakuA maruB" style="background-position: 0% 0%;"></div>
+    <div class="wakuA maruC" style="background-position: 0% 0%;"></div>
+    <div class="wakuA maruD" style="background-position: 0% 0%;"></div>
+  </li>
+  <li>
+    background-position: 100% 0%;
+    <div class="wakuA maruA" style="background-position: 100% 0%;"></div>
+    <div class="wakuA maruB" style="background-position: 100% 0%;"></div>
+    <div class="wakuA maruC" style="background-position: 100% 0%;"></div>
+    <div class="wakuA maruD" style="background-position: 100% 0%;"></div>
+  </li>
+</ul>
+
+
+</body>
+</html>
